@@ -16,3 +16,11 @@ function curry2(func) {
 
 var new_func = curry2(calculate(1, undefined, 4));
 console.log(new_func(3));
+
+/*
+C:\Studying\Inside_JavaScript\Ch07\7-08.js:13
+        return func.apply(null, args);
+                    ^
+
+TypeError: func.apply is not a function
+ */
